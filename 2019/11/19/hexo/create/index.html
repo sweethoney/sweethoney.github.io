@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="环境： git nodejs hexo  步骤： 新建文件夹  1mkdir [name]   安装hexo命令：1npm i -g hexo">
+<meta name="description" content="环境： git nodejs hexo  步骤: 新建文件夹 1mkdir [name] 安装hexo命令： 1npm i -g hexo">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Create">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;19&#x2F;hexo&#x2F;create&#x2F;index.html">
 <meta property="og:site_name" content="技术博客">
-<meta property="og:description" content="环境： git nodejs hexo  步骤： 新建文件夹  1mkdir [name]   安装hexo命令：1npm i -g hexo">
+<meta property="og:description" content="环境： git nodejs hexo  步骤: 新建文件夹 1mkdir [name] 安装hexo命令： 1npm i -g hexo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-19T10:34:40.835Z">
+<meta property="og:updated_time" content="2019-11-20T01:37:36.042Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -366,19 +366,15 @@
 <li>nodejs</li>
 <li>hexo</li>
 </ol>
-<h6 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h6><ol>
-<li>新建文件夹</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir [name]</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>安装hexo命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g hexo</span><br></pre></td></tr></table></figure>
+<h6 id="步骤"><a href="#步骤" class="headerlink" title="步骤:"></a>步骤:</h6><ol>
+<li><p>新建文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir [name]</span><br></pre></td></tr></table></figure></li>
+<li><p>安装hexo命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g hexo</span><br></pre></td></tr></table></figure>
 <a id="more"></a></li>
-<li>初始化 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>4.搭桥到github</p>
+<li><p>初始化 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></li>
+<li><p>搭桥到github</p>
 <blockquote>
 <ol>
 <li>创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用哦</li>
@@ -389,14 +385,13 @@
 </li>
 </ol>
 </blockquote>
-<ol start="5">
-<li>hexo项目，——config.yml 配置</li>
+</li>
+<li><p>hexo项目，——config.yml 配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
+<li><p>本地执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate（hexo g）</span><br><span class="line">hexo server (hexo s)</span><br><span class="line"></span><br><span class="line">更换端口号</span><br><span class="line">hexo s -p 5000</span><br><span class="line"></span><br><span class="line">部署到服务器</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<ol start="6">
-<li>本地执行</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate（hexo g）</span><br><span class="line">hexo server (hexo s)</span><br><span class="line"></span><br><span class="line">更换端口号</span><br><span class="line">hexo s -p 5000</span><br><span class="line"></span><br><span class="line">部署大服务器</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -571,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#环境："><span class="nav-number">1.</span> <span class="nav-text">环境：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#步骤："><span class="nav-number">2.</span> <span class="nav-text">步骤：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#环境："><span class="nav-number">1.</span> <span class="nav-text">环境：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤:</span></a></li></ol></div>
             
 
           </div>

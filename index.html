@@ -351,7 +351,13 @@
       
         
           
-            
+            <h5 id="nvm、node、npm之间的区别"><a href="#nvm、node、npm之间的区别" class="headerlink" title="nvm、node、npm之间的区别"></a>nvm、node、npm之间的区别</h5><blockquote>
+<p>nvm：nodejs版本管理工具，一个 nvm 可以管理很多 node 版本和 npm 版本<br>node：在项目开发时所需要的代码库<br>npm：nodejs 包管理工具</p>
+</blockquote>
+<h5 id="nvm、node、npm之间的关系"><a href="#nvm、node、npm之间的关系" class="headerlink" title="nvm、node、npm之间的关系"></a>nvm、node、npm之间的关系</h5><p>nvm 管理 nodejs 和 npm 的版本。npm 可以管理 nodejs 的第三方插件。</p>
+<h4 id="安装nvm"><a href="#安装nvm" class="headerlink" title="安装nvm"></a>安装nvm</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nvm</span><br></pre></td></tr></table></figure>
+
+<h4 id="nvm常用命令"><a href="#nvm常用命令" class="headerlink" title="nvm常用命令"></a>nvm常用命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">nvm install stable 安装最新稳定版本node</span><br><span class="line"></span><br><span class="line">nvm insyall &lt;version&gt; 安装指定版本，可模糊安装</span><br><span class="line"></span><br><span class="line">nvm uninstall &lt;version&gt; 删除已安装的指定版本</span><br><span class="line"></span><br><span class="line">nvm use &lt;version&gt; 切换使用指定版本node</span><br><span class="line"></span><br><span class="line">nvm ls  列出所有已安装的版本</span><br><span class="line"></span><br><span class="line">nvm ls-remote 列出所有服务器上的版本</span><br><span class="line"></span><br><span class="line">nvm current 当前版本</span><br><span class="line"></span><br><span class="line">nvm reinstall-packages &lt;version&gt;  在当前版本node环境下，重新全局安装指定版本号的npm包</span><br></pre></td></tr></table></figure>
           
         
       
